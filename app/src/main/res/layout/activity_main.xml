@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/insectImageView"
+        android:layout_width="368dp"
+        android:layout_height="336dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:color="#FFFFFF"
+        android:radius="50dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/insectResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/insectImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/recognizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recognize Insect"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/insectResultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick from Gallery"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/recognizeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popupTitleTextView"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/popupTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insect Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+            <Button
+                android:id="@+id/locationSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Location" />
+
+            <TextView
+                android:id="@+id/popupDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupHabitatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habitat: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupIdentificationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identification Tips: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupEcologicalImpactTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ecological Impact: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupControlMethodsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control Methods: "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/popupPreventionTipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prevention Tips: "
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
